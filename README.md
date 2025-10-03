@@ -81,42 +81,10 @@ G3 G#3 G#3 G3 G#3 G#3 G3 G#3 G#3 F3 F3 G3 C#3
 - Single note = Short duration
 - `..` = Long duration (held note)
 
-## Troubleshooting
-
-### Issue: All zeros in output
-**Solution**: Ensure audio file has clear musical content. Try files with vocals or melodic instruments.
-
-### Issue: ClassNotFoundException for javax.sound
-**Solution**: Make sure you're using the Android-compatible version with MediaCodec, not AudioDispatcherFactory.fromFile()
-
-### Issue: No permission to read files
-**Solution**: Check that READ_MEDIA_AUDIO permission is granted in app settings
-
-### Issue: App crashes on audio processing
-**Solution**: Process audio on background thread (already implemented with Thread {})
-
-## Limitations
-
-- Works best with monophonic audio (single melody line)
-- Polyphonic music (chords) may produce mixed results
-- Background noise can affect pitch detection accuracy
-- Very fast passages may not be captured accurately
-
-## Future Enhancements
-
-- [ ] Add lyrics timing sync
-- [ ] Export notes to PDF/Text file
-- [ ] Real-time recording and analysis
-- [ ] Support for gamakas (ornamentations)
-- [ ] Tempo detection
-- [ ] Beat tracking
-- [ ] Multiple ragas identification
-
-## License
 
 This project uses TarsosDSP which is licensed under GPL-3.0.
 
-## Credits
+## Tech
 
 - **TarsosDSP** - Audio processing library
 - **YIN Algorithm** - Pitch detection algorithm
